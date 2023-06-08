@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+* ul {
+    list-style: none;
+}
+
+* a{
+    color:  grey;}
+
+button:hover {
+    cursor: pointer;
+    color: #14bf98;
+    border: 2px solid #14bf98;
+    background-color: transparent;
+}
+
+header {
+    background: url("header-background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+   
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+}
+
+.navBarContainer {
+   position: fixed;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    
+}
+
+
+.logoContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer img {
+    width: 40%;
+}
+
+ul {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    margin: .5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+ul li select{
+    background: transparent;
+    color: white;
+    border: none;
+    height: 50px;
+    font-size:20px ;
+}
+
+.mainHeaderContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.mainHeaderContent h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.mainHeaderContent p {
+    color: white;
+    width: 45%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.mainHeaderContent button {
+    padding: .8rem 1.2rem;
+    background-color: #14bf98;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+section {
+    height: 130vh;
+    padding: 5rem 13rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.upperDiv {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowerDiv {
+    height: 50%;
+}
+
+.leftContent {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightImgContainer {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightImgContainer img {
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.intro {
+    color: #14bf98;
+    margin-bottom: .5rem;
+}
+
+.leftContent h1 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.des {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    color: grey;
+}
+
+.leftContent blockquote {
+    line-height: 1.5rem;
+    color: grey;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.ceo {
+    font-weight: 700;
+    color: black;
+}
+
+.lowerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowerDivCard {
+    width: 29%;
+    margin: 2.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lowerDivCard span {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14bf98;
+    color: white;
+    border-radius: 50%;
+}
+
+.lowerDivCard p {
+    line-height: 1.5rem;
+    color: grey;
+}
+
+.section2 {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.upperContainer {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upperContainer p {
+    color: #14bf98;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.upperContainer h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.lowerContainer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: .5px solid rgba(128, 128, 128, 0.477);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.card .imgContainer img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.contentContainer {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.contentContainer h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contentContainer p {
+    color: grey;
+}
+
+.cardContainer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer ul li {
+    color: grey;
+    margin: .5rem 0rem;
+    text-transform: none;
+    list-style-type: square;
+}
+
+.contentContainer h3 span {
+    color: #14bf98;
+}
+
+.cardContainer button {
+    width: fit-content;
+    position: absolute;
+    padding: .8rem 1.3rem;
+    border: none;
+    outline: none;
+    background-color: #14bf98;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    bottom: 0;
+    left: calc(50% - 2.7rem);
+    bottom: -4%;
+}
+
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 150vh;
+}
+
+.div1,
+.div4 {
+    width: 50%;
+    height: 50%;
+}
+
+.div3,
+.div2 {
+    width: 40%;
+    height: 50%;
+    padding: 5rem 4rem;
+    color: rgb(67, 66, 66);
+}
+
+.div1 img,
+.div4 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.div3 h1 {
+    font-size: 2rem;
+    margin-bottom: 1.625rem;
+}
+
+.div3 ol {
+    width: 100%;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.div3 ol li {
+    margin-bottom: 1.5rem;
+}
+
+.div3 ol li span {
+    display: block;
+    font-size: 1.3rem;
+}
+
+.div3 ol li:hover {
+    color: #14bf98;
+}
+
+.div3 ol li:hover .showMe {
+    display: block;
+    color: grey;
+}
+
+.div3 ol li p {
+    margin-top: .5rem;
+    width: 80%;
+    font-weight: normal;
+    font-size: 1rem;
+    display: none;
+}
+
+.div2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headings {
+    height: 10%;
+    display: flex;
+    justify-content: end;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+}
+
+.heading:hover {
+    color: #14bf98;
+}
+
+.elaborations {
+    height: 90%;
+    margin-top: 25px;
+    color: grey;
+    margin-left: 25%;
+}
+
+.elaborations ul {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.elaborations ul li {
+    list-style: square;
+    color: grey;
+    font-size: .8rem;
+}
+
+.elaborations p {
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.elaborations span {
+    color: rgb(67, 66, 66);
+    font-weight: bold;
+}
+
+.elaborations a {
+    color: #14bf98;
+}
+
+.testimonials {
+    background-color: whitesmoke;
+    height: 90vh;
+}
+
+.testimonialText{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonialText h1{
+    color: rgb(67, 66, 66);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.testimonialText p{
+    color: grey;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+.testimonialCards{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonialcard{
+    height: 100%;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialcard .imgContainer{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.testimonialcard .imgContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonialcard .contenntContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.testimonialcard .contenntContainer p{
+    margin-bottom: 1rem;
+    color: grey;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-style: italic;
+}
+
+.testimonialcard .contenntContainer h3{
+    color: rgb(67, 66, 66);
+    margin-bottom: 20px;
+}
+
+.formSection1{
+    background-color: #153e52;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formSection1 .content{
+    width: 50%;
+    padding: 3%;
+}
+
+.content span{
+    color: #14bf98;
+    font-size: .9rem;
+}
+
+.content h1{
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: square;
+    align-items: flex-start;
+}
+
+.content ul li{
+    text-transform: none;
+    text-align: left;
+}
+
+.content p, .content ul li{
+    line-height: 1.5rem;
+    color: rgba(245, 245, 245, 0.749);
+}
+
+.form1{
+    width: 50%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 input, .form1 select{
+    color: rgba(245, 245, 245, 0.749);
+    background-color: #2a5d77;
+    margin-top: 3%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 3%;
+}
+
+
+.form1 .checkbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+    color: rgba(245, 245, 245, 0.749);
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.form1 a{
+    color: rgba(245, 245, 245, 0.749);
+}
+
+button{
+    margin-top: 2%;
+    color: white;
+    font-weight: bold;
+    padding: 4%;
+    background-color: #14bf98;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.gallery{
+    align-items: center;
+}
+
+.gallery span{
+    color: #14bf98;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.gallery h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: rgb(67, 66, 66);
+}
+
+.tabs{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.tabs button{
+    padding: 1% 3%;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    height: 75%;
+}
+
+.photos .imgContainer{
+    width: 25%;
+    height: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.photos .imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.photos p{
+    font-size: larger;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    top: 42%;
+    color: white;
+    width: 100%;
+    display: none;
+}
+
+.photos .imgContainer:hover .shoMe{
+    display:block;
+    cursor: pointer;
+}
+
+.staff{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.staffDes{
+    text-align: center;
+    width: 60%;
+}
+
+.staff h1{
+    font-size: 2rem;
+}
+
+.staffDes p{
+    margin-top: 20px;
+    line-height: 1.5rem;
+}
+
+.staffCards{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.staffcard{
+    height: 100%;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staffcard .imgContainer{
+    width: 250px;
+    height: 220px;
+}
+
+.staffcard .imgContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 40%;
+}
+
+.staffcard .contenntContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.staffcard .contenntContainer p{
+    color: grey;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.staffcard .contenntContainer h3{
+    color: rgb(67, 66, 66);
+    margin-bottom: 10px;
+}
+
+.contenntContainer p i{
+    color: #14bf98;
+}
+
+.about{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .imgContainer{
+    width: 55%;
+    height: 85%;
+}
+
+.about .imgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.aboutContent{
+    width: 41%;
+    height: 85%;
+}
+
+.aboutContent span{
+    font-size: .9rem;
+    color: #14bf98;
+}
+
+.aboutContent h1{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 2rem;
+    color: rgb(67, 66, 66);
+}
+
+.aboutContent p{
+    color: grey;
+    line-height: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.aboutContent ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    list-style: square;
+    margin-left: 10px;
+}
+
+.about ul li{
+    color: grey;
+    text-transform: none;
+}
+
+.stats{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.stats span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.stats p{
+    width: 30%;
+}
+
+.formSection2{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.form2Content{
+    width: 50%;
+    height: 100%;
+}
+
+.form2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.form2 input{
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 1rem 1rem;
+}
+.name{
+    width: 100%;
+}
+
+.email{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    outline: none;
+    padding: 1rem 1rem;
+    min-height: 30%;
+    border-radius: 5px;
+}
+
+.form2 .checkbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form2 button{
+    width: 100%;
+}
+
+.socialContainer i{
+    color: #14bf98;
+    margin: 30px 10px;
+    font-size: 3rem;
+}
+
+.form2Content span{
+    color: #14bf98;
+}
+
+.form2Content h1{
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: rgb(67, 66, 66);
+}
+
+.form2Content p{
+    color: grey;
+    margin-bottom: 25px;
+    line-height: 1.5rem;
+}
+
+.form2Content i{
+    color: #14bf98;
+}
+
+.reach{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reach p span{
+    color: grey;
+    text-decoration: underline;
+}
+
+.form2Content h3{
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+    margin-bottom: 20px;
+}
+
+footer{
+    color: rgba(255, 255, 255, 0.868);
+    background-color: #113448;
+    padding: 2rem 6rem;
+    
+}
+
+.footerContents{
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+
+.footerContent h3{
+    color: white;
+    margin-bottom: 2%;
+}
+
+.footerContent p{
+    line-height: 1.5rem;
+}
+
+footer ul{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+footer ul li{
+    color: rgba(255, 255, 255, 0.868);
+    text-transform: none;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.868);
+}
+
+.footerContent{
+    width: 40%;
+}
+
+.flist{
+    width: 12%;
+}
+
+.copyright{
+    text-align: center;
+}
+
